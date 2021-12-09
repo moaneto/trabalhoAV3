@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+        <title>Vídeos Teste</title>
+        <link rel="icon" href="imagens/icone_ZW.png">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/video.css">
+		<link rel="stylesheet" href="css/nav-style.css">
+		<link rel="stylesheet" href="css/style-home.css">
+		
+    </head>	
+    
+    <body>
+        <header>
+            <!-- Como só link o cabeçalho e o rodapé para todas as páginas? -->
+            <div class="caixaMenu">
+                <h1><a href="index.html"><img id="logo" src="imagens/Logo Zero Gradiente_Branca.png" alt="Logo Zero Wake Society" ></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+						<li><a href="atletas.html">Atletas</a></li>
+						<li><a href="sign-in/login.html">Login</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+		<img id="banner" src="imagens/banner.jpg">
+
+		<div class="corpo">
+			<h2 id="titulo">Zero Wake Society</h2>
+			<p>Grupo de amigos alucinados pelo wakeboard.</p>
+			
+			<p id="linkZero">Canal no <a href="http://www.youtube.com/ZeroWakeSociety" target="_blank">youtube</a></p>
+			
+			<p><strong>Zero Wake Park</strong> localizado em Fortaleza - CE. 
+				<br>Dentro do complexo <em>Colosso Fortaleza.</em></p>
+		</div>
+
+		<div class="conhecaAtletas">
+			<h3 id="titulo">Atletas da Zero</h3>
+			<ul>
+				<li class="atleta">Germano Nottingham</li>
+				<li class="atleta">Daniel Jamur</li>
+				<li class="atleta">Caique Franklin</li>
+				<li class="atleta">Zé Esmeraldo</li>
+				<li class="atleta">Hugo Kronenberger</li>
+				<li class="atleta">Breno Benevides</li>
+			</ul>
+			<img class="imagemAtleta" src="imagens/imagem_atleta.jpg">
+		</div>
+
+		<!--coneção com o banco-->
+		<script type="module">
+			import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
+			import { getDatabase, onValue, ref, set, get, update, child } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-database.js";
+		  
+			const firebaseConfig = {
+				apiKey: "AIzaSyCjZvXxLS_EFhu-zVay1l9ujkbW7gRRa10",
+				authDomain: "bancodedados-e9152.firebaseapp.com",
+				databaseURL: "https://bancodedados-e9152-default-rtdb.firebaseio.com/",
+				projectId: "bancodedados-e9152",
+				storageBucket: "bancodedados-e9152.appspot.com",
+				messagingSenderId: "862320454557",
+				appId: "1:862320454557:web:1283b7e4485468ecfa9d74"
+			};
+		  
+			const app = initializeApp(firebaseConfig);
+			const _db = getDatabase(app);
+		  
+			window.firebase = app;
+			window.db = _db;
+		  
+			window.ref = ref;
+			window.set = set;
+			window.get = get;
+			window.child = child;
+			window.update = update;
+			window.dbRef = ref(_db);
+			window.onValue = onValue;
+		  </script>
+		  <!--coneção com o banco-->
+
+		  
+	</body>
+	<footer>
+		<img src="imagens/Logo Zero Gradiente_Preta.png" >
+		<p class="copyright">&copy; Copyright Zero Wake Society</p>
+	</footer>
+
+</html>

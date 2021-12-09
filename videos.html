@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Vídeos Teste</title>
+    <link rel="icon" href="imagens/icone_ZW.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/nav-style.css">
+
+</head>
+<body>
+    <header>
+        <div class="caixaMenu">
+            <h1><a href="index.html"><img id="logo" src="imagens/Logo Zero Gradiente_Branca.png" alt="Logo Zero Wake Society" ></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="atletas.html">Atletas</a></li>
+                    <li><a href="videos.html">Vídeos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="container">
+        <section id="intro">
+            <main>
+                <p>Aqui você pode assitir os últimos vídeos ou adicionar novos.</p>
+            </main>
+                    <section id="buttons">
+                        <button onclick="onOff()" class="addVideo">+Adicionar vídeo</button>
+                        <button class="fat">Ver vídeos</button>
+
+                    </section>
+        </section>
+        <section id="last-videos">
+            <div class="videos">
+                <img src="tumbnail do video" alt="Tumb do vídeo">
+
+                <div class="content">
+                    <h3>Título do vídeo</h3>
+                    <p>Video de Cable</p>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nam fugit dicta accusantium neque porro assumenda, tempora ipsam laborum quaerat pariatur molestiae ut incidunt ipsa, quis ducimus a aperiam facere.
+                    </div>
+                    <a href="#">Ir para o vídeo</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="modal" class="hide">
+        <div class="content">
+            <h1>Adicionar vídeo</h1>
+
+            <form action="">
+
+                <div class="input-wrapper">
+                    <label for="title">Título do Vídeo</label>
+                    <input type="text" name="title">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="category">Categoria</label>
+                    <input type="text" name="category">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="link">Link</label>
+                    <input type="url" name="link">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="description">Descrição do Vídeo</label>
+                    <textarea name="description" cols="30" rows="10"></textarea>
+                </div>
+                <a href="#" onclick="onOff()">Voltar</a>
+                <button>Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <footer>
+        <img src="imagens/Logo Zero Gradiente_Preta.png" >
+        <p class="copyright">&copy;Copyright Zero Wake Society - 2020</p>
+    </footer>
+    
+    <script src="scripts/video.js"></script>
+</body>
+</html>

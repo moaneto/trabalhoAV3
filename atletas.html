@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+        <title>Atletas</title>
+        <link rel="icon" href="imagens/icone_ZW.png">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/video-atleta.css">
+        <link rel="stylesheet" href="css/nav-style.css">
+    </head>	
+    
+    <body>
+        <header>
+            <!-- Como colocar só link o cabeçalho e o rodapé para todas as páginas? -->
+            <div class="caixaMenu">
+                <h1><a href="index.html"><img id="logo" src="imagens/Logo Zero Gradiente_Branca.png" alt="Logo Zero Wake Society" ></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="atletas.html">Atletas</a></li>
+                        <li><a href="videos.html">Vídeos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="atletas">
+
+                <ul>
+                    <li class="atleta" >
+                        <button onclick="onOff()">      
+                                <h2>Germano Nottingham</h2>
+                                <img src="imagens/perfil/germano.jpg">                                       
+                        </button>
+                    </li>
+                    <li class="atleta">
+                        <h2>Daniel Jamur</h2>
+                        <img src="imagens/perfil/jamur.jpeg"> 
+                        <p>+ video</p>
+                    </li>
+                    <li class="atleta">
+                        <h2>Caique Franklin</h2>
+                        <img src="imagens/perfil/caique.jpg">
+                        <p>+ video</p>
+                    </li>
+                    <li class="atleta">
+                        <h2>Zé Esmeraldo</h2>
+                        <img src="imagens/perfil/ze.jpeg"> 
+                        <p>+ video</p>
+                    </li>
+                    <li class="atleta">
+                        <h2>Hugo Kronenberger</h2>
+                        <img src="imagens/perfil/hugo.jpg">
+                        <p>+ video</p>
+                    </li>
+                    <li class="atleta">
+                        <h2>Breno Benevides</h2>
+                        <img src="imagens/perfil/breno.jpg">
+                        <p>+ video</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </main>
+        <div id="modal" class="hide">
+            <div class="content">
+                <a href="#" onclick="onOff()">X</a>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F9vp1tDYBCA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2>Germano Nottingham</h2>  
+            </div>
+        </div>
+      <footer>
+            <img src="imagens/Logo Zero Gradiente_Preta.png" >
+            <p class="copyright">&copy;Copyright Zero Wake Society</p>
+        </footer>
+    </body>
+    <script src="scripts/video.js"></script>
+</html>
